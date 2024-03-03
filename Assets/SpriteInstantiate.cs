@@ -7,7 +7,7 @@ public class SpriteInstantiate : MonoBehaviour
     public GameObject bearPrefab; // Assign prefab in  inspector
     public GameObject sushiPrefab; 
     [SerializeField] int Ratio = 50;
-    public float instantiateInterval = 1.0f; // Create a time interval between prefabs
+    public float instantiateInterval = 2.0f; // Create a time interval between prefabs
     [SerializeField] float MinY;
     [SerializeField] float MaxY;
 
