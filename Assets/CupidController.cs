@@ -48,10 +48,10 @@ public class CupidController : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Instantiate(explosionPrefab, transform.position, transform.rotation);
-            if (gm.Timer == 0)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
+            //gm.Timer = 0;
+            Time.timeScale = 0; // End game when player is collided with
+
         }
     }
 }
