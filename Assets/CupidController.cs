@@ -11,11 +11,12 @@ public class CupidController : MonoBehaviour
     [SerializeField] GameObject heartPrefab;
     [SerializeField] GameObject explosionPrefab;
     [SerializeField] Vector3 arrow;
+    GameManager gm;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        gm = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -47,7 +48,10 @@ public class CupidController : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Instantiate(explosionPrefab, transform.position, transform.rotation);
-            Destroy(gameObject);
+            if (gm.Timer == 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

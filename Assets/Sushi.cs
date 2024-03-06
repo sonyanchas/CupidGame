@@ -5,14 +5,15 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Sushi : MonoBehaviour
 {
-    public int points;
+    public int points = 0;
     public float Speed;
+    GameManager gm;
     [SerializeField] GameObject starPrefab;
     
     // Start is called before the first frame update
     void Start()
     {
-        GameManager gm = FindObjectOfType<GameManager>();
+        gm = FindObjectOfType<GameManager>();
         Destroy(gameObject, 5f);
     }
 
@@ -28,8 +29,8 @@ public class Sushi : MonoBehaviour
         {
             Instantiate(starPrefab, transform.position, transform.rotation); //Create star explosiob then destroy
             Destroy(gameObject);
-            points = points + 10;
-            Debug.Log("Score: " + points);
+            gm.Score += 100;
+            //Debug.Log("Score: " + points);
 
  
         }
