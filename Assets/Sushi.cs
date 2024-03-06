@@ -29,7 +29,7 @@ public class Sushi : MonoBehaviour
         {
             Instantiate(starPrefab, transform.position, transform.rotation); //Create star explosiob then destroy
             Destroy(gameObject);
-            gm.Score += 100;
+            gm.Score -= 100;
             //Debug.Log("Score: " + points);
 
  

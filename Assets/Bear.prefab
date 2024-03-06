@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2496998778630736013}
   - component: {fileID: 540699121586091357}
   - component: {fileID: -2633450880243007852}
-  - component: {fileID: 7078447359347149555}
   - component: {fileID: 2943087248295350334}
+  - component: {fileID: -307005738973520932}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Obstacle
@@ -132,20 +132,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.25}
   m_EdgeRadius: 0
---- !u!114 &7078447359347149555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9017848058973438224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11cf569d87eb8434dbd52841fb2d5c22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 4
-  starPrefab: {fileID: 4427700838079845954, guid: 74f3dd4aba2da664a8b78077fa4345d7, type: 3}
 --- !u!50 &2943087248295350334
 Rigidbody2D:
   serializedVersion: 4
@@ -173,3 +159,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-307005738973520932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017848058973438224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096213b40627fde49a2b1c4025fde440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  Speed: 4
+  starPrefab: {fileID: 4427700838079845954, guid: 74f3dd4aba2da664a8b78077fa4345d7, type: 3}

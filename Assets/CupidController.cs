@@ -49,7 +49,6 @@ public class CupidController : MonoBehaviour
         {
             Instantiate(explosionPrefab, transform.position, transform.rotation);
             Destroy(gameObject);
-            //gm.Timer = 0;
             Time.timeScale = 0; // End game when player is collided with
 
         }
